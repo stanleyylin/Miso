@@ -12,7 +12,9 @@ for line in inFile:
         if count == 6 or count == 12:
             newLine += item + ","
         count += 1
-    outFile.write(newLine)
+    outFile.write(newLine +"\n")
+
+
     
 
 
