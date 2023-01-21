@@ -1,7 +1,7 @@
 .intro {
   background-color: #215742;
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   display: grid;
   place-items:center;
 
@@ -21,4 +21,11 @@
   line-height: 1.7;
 
 
+}
+
+.scroller-photo {
+  width: 405px;
+  height: 457.5px;
+  object-fit: cover;
+  border-radius: 30px;
 }
