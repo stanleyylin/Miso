@@ -3,7 +3,7 @@ from discord.ext import commands
 from commands import Commands
 
 intents = discord.Intents.default()
-TOKEN = "MTA2NjI0MDk4MDI0NTgxMTIwMQ.GAx16q.La9D-vRsEAAn8tuvAN0QxUgjHC5vUHZLSK7x2w"
+TOKEN = "MTA2NjI0MDk4MDI0NTgxMTIwMQ.Gmf1Le.RfbZ_ujG6qt5NUbmUvhziuuxFFg7VD_oT9zATg"
 # client = commands.Bot()
 
 client = commands.Bot(command_prefix = '+', intents= intents)
@@ -17,7 +17,7 @@ async def on_ready():
     print("The bot is now ready for use.")
     print("-----------------------------")
 
-@client.command(name)
+@client.command()
 async def hello(ctx):
     print("received message")
     await ctx.send("hola")
