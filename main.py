@@ -22,8 +22,8 @@ async def hello(ctx):
     await ctx.send("hola")
 
 with open("token.txt", "r", encoding="utf-8") as f:
-    bottoken = f.read()
+    bottoken1 = f.read()
 
-client.run(bottoken)
+client.run(bottoken1)
 
 
