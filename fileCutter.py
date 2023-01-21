@@ -6,6 +6,7 @@ outFile.write("message,isMisogynistic" + "\n")
 inFile = open("final_labels.csv", "r")
 inFile.readline()
 newLine = ""
+
 for line in inFile:
     lineItems = line.strip().split(",")
     if len(lineItems) < 7:
