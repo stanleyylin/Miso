@@ -3,7 +3,6 @@ from discord.ext import commands
 from commands import Commands
 
 intents = discord.Intents.all()
-TOKEN = "MTA2NjI0MDk4MDI0NTgxMTIwMQ.Gmf1Le.RfbZ_ujG6qt5NUbmUvhziuuxFFg7VD_oT9zATg"
 # client = commands.Bot()
 
 client = commands.Bot(command_prefix = '+', intents= intents)
@@ -22,4 +21,9 @@ async def hello(ctx):
     print("received message")
     await ctx.send("hola")
 
-client.run(TOKEN)
+with open("token.txt", "r", encoding="utf-8") as f:
+    bottoken = f.read()
+
+client.run(bottoken)
+
+
