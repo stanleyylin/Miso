@@ -1,6 +1,6 @@
 
 outFile = open("output.txt", "w")
-outFile.write("message,isMisogynistic","\n")
+outFile.write("message,isMisogynistic" + "\n")
 
 #slicing up final_labels.csv
 inFile = open("final_labels.csv", "r")
