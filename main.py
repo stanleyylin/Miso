@@ -1,6 +1,8 @@
 import discord
 from discord.ext import commands
 from commands import Commands
+import misogynyModel
+import cohere
 
 intents = discord.Intents.all()
 # client = commands.Bot()
@@ -15,6 +17,11 @@ client.add_cog(Commands(client))
 async def on_ready():
     print("The bot is now ready for use.")
     print("-----------------------------")
+
+@client.event
+async def on_message(message):
+    isTrue, confidence = misogynyModel.classifyMessage(message.content)
+    await message.general.send(isTrue, confidence)
 
 @client.command()
 async def hello(ctx):
