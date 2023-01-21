@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'TuesdayNight';
+  src: local('TuesdayNight'), url(./res/TuesdayNight-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Cocogoose';
+  src: local('Cocogoose'), url(./res/Cocogoose.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'CocogooseI';
+  src: local('CocogooseI'), url(./res/Cocogoose.ttf) format('truetype');
+}
+
+html,body {
+  margin:0;
+  padding:0;
+}
