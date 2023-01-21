@@ -17,8 +17,9 @@ def classifyMessage(message):
     
     return isMiso,confidence
 
-
 # def checkMessageHistory(history):
+
+
 #test
 
 print(classifyMessage("I hate women"))
