@@ -14,6 +14,7 @@ for line in inFile:
         continue
     if len(lineItems[6]) > 1 and lineItems[6][0] == "\"":
         lineItems[6] = lineItems[6][1:]
+    lineItems[6] = lineItems[6].replace(",","")
 
     if lineItems[-6] == "Nonmisogynistic":
         newLine += lineItems[6] + "," + "False"
