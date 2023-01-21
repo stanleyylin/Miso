@@ -20,8 +20,12 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    isTrue, confidence = misogynyModel.classifyMessage(message.content)
-    await message.general.send(isTrue, confidence)
+    if message.author.bot:
+        return
+    problemList = misogynyModel.classifyMessage(message.content)
+    await message.channel.send(str(problemList[0]) + ", " + str(problemList[1]) + "%")
+    await message.channel.send(str(problemList[2]) + ", " + str(problemList[3]) + "%")
+   
 
 @client.command()
 async def hello(ctx):
