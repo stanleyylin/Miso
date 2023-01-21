@@ -1,6 +1,8 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-const element = <h1>Hello from Create React App</h1>
+import DemoContainer from "./components/DemoContainer"
 
-ReactDOM.render(element, document.getElementById("root"))
+ReactDOM.render(<React.StrictMode>
+  <DemoContainer />
+</React.StrictMode>, document.getElementById("root"))
