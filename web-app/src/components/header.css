@@ -1,9 +1,10 @@
 .intro {
   background-color: #215742;
-  width: 100vw;
-  height: 120vh;
+  width: 120vw;
+  height: 140vh;
   display: grid;
   place-items:center;
+  
 
 }
 
@@ -13,13 +14,21 @@
   font-size: 70px;
   
 }
+.top-header {
+  margin-top: 160px;
+  width: 892px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  align-items: center;
+  
+}
 
 .pitch {
   color:white;
   font-size: 50px;
   font-family: 'Cocogoose';
   line-height: 1.7;
-
+  margin-right: 120px;
 
 }
 

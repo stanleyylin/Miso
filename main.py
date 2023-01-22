@@ -35,5 +35,3 @@ with open("token.txt", "r", encoding="utf-8") as f:
     bottoken1 = f.read()
 
 client.run(bottoken1)
-
-
