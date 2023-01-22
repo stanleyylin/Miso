@@ -6,6 +6,10 @@ import Profile from '../res/profile.png'
 const DemoContainer = () => {
   const[val1, setVal1] =  useState("Type your Message below and submit...")
   const[val2, setVal2] =  useState("The bot will warn you if your message is misogynistic and/or toxic!")
+
+  const click = event => {
+    setVal1(event.taget.value)
+  }
   return (
     <div className='outer-box'>
       <div className='line-1'>
