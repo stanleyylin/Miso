@@ -42,7 +42,7 @@ async def on_message(message):
         await message.channel.send("Please take a moment to learn why that last message was misogynistic: https://stopsexism.carrd.co/")
     elif str(problemList[2]) == "Toxic" and int(problemList[3] >=80):
         await message.delete()
-        await message.channel.send("Please take a moment to learn why that last message was toxic: ")
+        await message.channel.send("Please take a moment to learn why that last message was toxic: https://stoptoxicity.carrd.co/")
 
     
     import requests
