@@ -67,6 +67,8 @@ async def on_message(message):
 
     response = requests.request("POST", url, headers=headers, data=payload, files=files)
     # print(response.json()['cid'])
+    #initialled used this ^ line to save the content IDs, but it works too inconsistently when requesting from the server
+    # to keep it in the code. as a short term fix we saved another file for message history as well
     curFile.close()
     try:
         os.remove(fileName)
