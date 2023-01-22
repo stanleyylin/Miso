@@ -34,21 +34,29 @@ async def on_message(message):
         return    
     
     import requests
-    url = "//api.estuary.tech/content/add"
+    url = "https://api.estuary.tech/content/add"
 
+
+
+    import os
+    fileName = "messageHistory" + str(message.id) + ".txt"
+    curFile = open(fileName,"w")
     payload={}
     files=[
-    ('data',('file',open('\Users\lecia\OneDrive\Documents\GitHub\Miso\messageHistory.txt','rb'),'application/octet-stream'))
+    ('data',('file',open('/Users/pranav/git/repository/Miso/' + fileName + '','rb'),'application/octet-stream'))
     ]
     headers = {
-    'Accept': 'application/json'
+    'Accept': 'application/json',
+    'Authorization' : "Bearer EST0bcf3718-9ad8-44b5-b893-eee73f497ce6ARY"
     }
 
     response = requests.request("POST", url, headers=headers, data=payload, files=files)
-    print(response.text)
-
-    if curFile[1] == "True":
-        await message.author.send("pip")
+    print(response.json()['cid'])
+    curFile.close()
+    try:
+        os.remove(fileName)
+    except:
+        print("file not found")
     problemList = misogynyModel.classifyMessage(message.content)
     await message.channel.send(str(problemList[0]) + ", " + str(problemList[1]) + "%")
     await message.channel.send(str(problemList[2]) + ", " + str(problemList[3]) + "%")

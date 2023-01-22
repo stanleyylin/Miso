@@ -55,12 +55,18 @@ def classifyMessage(message):
     
     return returnList
  
+from fastapi import FastAPI
+app = FastAPI()
+
+@app.get('/get-result')
+async def getResult(msg: str):
+    return classifyMessage(msg)
+
 
 # def checkMessageHistory(history):
 
 
 #test
 
-for item in classifyMessage("women should die"):
-    print(item, end= "---\n")
+
 
