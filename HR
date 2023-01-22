@@ -1,0 +1,22 @@
+import discord
+from discord.ext import commands
+
+bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
+
+@bot.event 
+async def on_ready():
+    print("HR bot did smth lol")
+    print("-------------------")
+
+
+@bot.event
+async def on_message(message):
+    if message.author.bot:
+        return
+    if "True" in message.content:
+        role = discord.utils.get(message.guild.roles, name="HR")
+        for member in role.members:
+            await member.send("The miso bot output 'True', Please check it out!")
+        print ("i did smth")
+
+bot.run("MTA2NjQ4NDM5MTM0NzUwNzM3MA.GIkkph.e1OL6yhsl-1SvNC_7-Z4qUcjZIs5EMoXX6uAHA")
