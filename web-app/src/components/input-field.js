@@ -13,7 +13,8 @@ const WriteMessage =  () => {
       }
     e.preventDefault();
     console.log(e);
-    var test = await fetch("http://127.0.0.1:8000/get-result?msg=i%20love")
+    var textField = name.replace(" ", "%20") 
+    var test = await fetch("http://127.0.0.1:8000/get-result?msg=" + textField + "")
     console.log(await test.text())
             
             
