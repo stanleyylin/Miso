@@ -1,37 +1,33 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { useState } from 'react'
+import './democontainer.css'
+import WriteMessage from './WriteMessage'
+import Profile from '../res/profile.png'
+const DemoContainer = () => {
+  const[val1, setVal1] =  useState("Type your Message below and submit...")
+  const[val2, setVal2] =  useState("The bot will warn you if your message is misogynistic and/or toxic!")
+  return (
+    <div className='outer-box'>
+      <div className='line-1'>
+          <p> You</p>
+          <img className='profile1' src={Profile}/>
+          <p className='user-message'>{val1}</p>
+          
+      </div>
 
-class DemoContainer extends React.Component {
-  state = {
-    todos: [
-      {
-        id: 1,
-        title: "Setup development environment",
-        completed: true
-      },
-      {
-        id: 2,
-        title: "Develop website and add content",
-        completed: false
-      },
-      {
-        id: 3,
-        title: "Deploy to live server",
-        completed: false
-      }
-    ]
-   };
+      <div>
+        <img className='profile2' src={Profile}/>
+        <p className='bot-message'>{val2}</p>
+      </div>
+      <div>
 
-  render() {
-    return (
-      <ul>
-      {this.state.todos.map(todo => (
-        <li>{todo.title}</li>
-      ))}
-    </ul>
-    )
+      </div>
+    </div>
 
-  }
-
+    
+  )
 }
 
 export default DemoContainer
+
+
