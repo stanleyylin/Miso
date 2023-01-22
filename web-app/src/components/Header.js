@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className="intro">
       <div className="top-header">
-        <p className="pitch">Slay goodbye to misogyny in your <span className="workplace-text">Workplace</span>.</p>
+        <p className="pitch">Say goodbye to misogyny in your <span className="workplace-text">Workplace</span>.</p>
       </div>
       <InfiniteLooper speed="25" direction="right" className='dance'>
         <div className="contentBlock contentBlock--one">

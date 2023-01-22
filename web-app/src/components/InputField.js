@@ -46,11 +46,11 @@ const InputField = () => {
 
   return (
     <div>
-      <div className='center-it'>
+      <div>
         <p className='pretty'> Demo </p>
       </div>
-      <div className='center-it'>
-        <p className='instruct'> Send a message for toxicity and sexism detection! </p>
+      <div>
+        <p className='instruct'> Send a message for misogyny and toxicity detection! </p>
       </div>
       <div className='outer-box'>
         <div className='line-1'>

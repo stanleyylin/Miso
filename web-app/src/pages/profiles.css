@@ -1,7 +1,31 @@
 .bg-profile {
   background-color: #215742;
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   display: grid;
   place-items:center;
+}
+
+.profiles-title {
+  font-family: 'TuesdayNight';
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+
+.profiles-instruct {
+  font-family: 'Cocogoose';
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  width: 600px;
+  margin-top: -22rem;
+  line-height: 1.8;
+
+}
+.gif-file {
+  width: 900px;
+  margin-top: -22rem;
+  border-radius: 30px;
 }

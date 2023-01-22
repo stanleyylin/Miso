@@ -15,9 +15,6 @@
 
 }
 
-.center-it {
-  
-}
 .outer-box {
   border-radius: 20px;
   height: 400px;
@@ -62,9 +59,17 @@
 
 .pretty {
   font-family:'TuesdayNight';
-  font-size: 60px;
+  font-size: 70px;
   color: white;
-  align-self: center;
+  text-align: center;
+
+}
+.instruct {
+  color: white;
+  text-align: center;
+  font-family: Cocogoose;
+  font-size: 25px;
+  margin-bottom: 40px;
 }
 .name2 {
   font-family: 'Roboto', sans-serif;
