@@ -33,6 +33,23 @@ async def on_message(message):
         curFile.write(str(message.author.name) + "\n")
         return    
     
+    problemList = misogynyModel.classifyMessage(message.content)
+
+    #problemList = [true/false, >60, toxic/benign, >90]
+    print(problemList)
+    if str(problemList[0]) == "True" and int(problemList[1]) >= 60:
+        await message.delete()
+        # await message.channel.send("stop being misogynistic")
+    elif str(problemList[2]) == "Toxic" and int(problemList[3] >=80):
+        await message.delete()
+        # await message.channel.send("stop being toxic")
+
+
+    # await message.channel.send(str(problemList[0]) + ", " + str(problemList[1]) + "%")
+    # await message.channel.send(str(problemList[2]) + ", " + str(problemList[3]) + "%")
+
+
+    
     import requests
     url = "https://api.estuary.tech/content/add"
 
@@ -51,15 +68,13 @@ async def on_message(message):
     }
 
     response = requests.request("POST", url, headers=headers, data=payload, files=files)
-    print(response.json()['cid'])
+    # print(response.json()['cid'])
     curFile.close()
     try:
         os.remove(fileName)
     except:
         print("file not found")
-    problemList = misogynyModel.classifyMessage(message.content)
-    await message.channel.send(str(problemList[0]) + ", " + str(problemList[1]) + "%")
-    await message.channel.send(str(problemList[2]) + ", " + str(problemList[3]) + "%")
+    
 
 @client.command()
 async def hello(ctx):
