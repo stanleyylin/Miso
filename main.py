@@ -3,6 +3,7 @@ from discord.ext import commands
 from commands import Commands
 import misogynyModel
 import cohere
+import asyncio
 
 intents = discord.Intents.all()
 # client = commands.Bot()
@@ -22,6 +23,7 @@ async def on_ready():
 async def on_message(message):
     #if message.author.bot:
     #    return
+    await asyncio.sleep(0) 
     curFile = open("messageHistory.txt","a")
     curFile.write(str(message.id) + ",")
     curFile.write(str(message.content) + ",")
@@ -43,7 +45,8 @@ async def on_message(message):
     elif str(problemList[2]) == "Toxic" and int(problemList[3] >=80):
         await message.delete()
         await message.channel.send("Please take a moment to learn why that last message was toxic: https://stoptoxicity.carrd.co/")
-
+    else:
+        await asyncio.sleep(3) 
     
     import requests
     url = "https://api.estuary.tech/content/add"
