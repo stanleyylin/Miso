@@ -22,6 +22,10 @@ async def on_ready():
 async def on_message(message):
     if message.author.bot:
         return
+    curFile = open("messageHistory.txt","a")
+    curFile.write(str(message.id) + ",")
+    curFile.write(str(message.content) + ",")
+    curFile.write(str(message.author.name) + "\n")
     problemList = misogynyModel.classifyMessage(message.content)
     await message.channel.send(str(problemList[0]) + ", " + str(problemList[1]) + "%")
     await message.channel.send(str(problemList[2]) + ", " + str(problemList[3]) + "%")
