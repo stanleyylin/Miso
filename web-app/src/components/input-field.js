@@ -2,10 +2,10 @@ import { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import axios from 'axios'
 
-const WriteMessage = () => {
+const WriteMessage =  () => {
   const [name, setName] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     const data = {
         inputs: [
           e.value,
@@ -13,8 +13,8 @@ const WriteMessage = () => {
       }
     e.preventDefault();
     console.log(e);
-    var test = fetch("127.0.0.1:8000/get-result?msg=i%20love")
-    console.log(test)
+    var test = await fetch("http://127.0.0.1:8000/get-result?msg=i%20love")
+    console.log(await test.text())
             
             
   }
