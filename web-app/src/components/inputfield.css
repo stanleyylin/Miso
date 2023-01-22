@@ -14,6 +14,10 @@
   font-size: 20px;
 
 }
+
+.center-it {
+  
+}
 .outer-box {
   border-radius: 20px;
   height: 400px;
@@ -27,13 +31,14 @@
 }
 .user-message {
   float: right;
-  margin-top: 60px;
+  margin-top: 50px;
   margin-right: 65px;
   width: 350px;
+  
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  background-color: #99DEC3;
-  padding: 15px;
+  background-color: #a2bfb4;
+  padding: 25px;
   border-radius: 10px;
 }
 .bot-message {
@@ -42,11 +47,33 @@
   font-family: 'Roboto', sans-serif;
   width: 350px;
   font-size: 20px;
-  background-color: #6c6c6c;
-  padding: 15px;
+  background-color: rgb(99, 141, 105);
+  padding: 25px;
   border-radius: 10px;
 }
 
+.name1 {
+  font-family: 'Roboto', sans-serif;
+  left: 340px;
+  top: 40px;
+  position: relative;
+  color:rgb(53, 53, 53);
+}
+
+.pretty {
+  font-family:'TuesdayNight';
+  font-size: 60px;
+  color: white;
+  align-self: center;
+}
+.name2 {
+  font-family: 'Roboto', sans-serif;
+  left: 390px;
+  bottom: 10px;
+  position: relative;
+  color:rgb(53, 53, 53);
+
+}
 .profile1 {
   position: relative;
   right: 30px;

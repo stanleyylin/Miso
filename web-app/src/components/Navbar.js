@@ -19,7 +19,8 @@ const Navbar = () => {
         <ul     className='buttons-inner'>
           <li><Link to="/demo" className='each-button'>Demo</Link></li>
           <li><Link to="/profiles" className='each-button'>Profiles</Link></li>
-          <li className='each-button'>Download</li>
+          <a href="https://discordapp.com/oauth2/authorize?&client_id=1066240980245811201&scope=bot">
+            <li className='each-button'>Download</li></a>
         </ul>
       </div>
     </nav>
