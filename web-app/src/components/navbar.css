@@ -1,0 +1,51 @@
+nav {
+
+  height: 5rem;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border-radius: 40px;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.buttons {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-right: 10%;
+}
+.title-box {
+  margin-left: 10%;
+  margin-top: 10px;
+}
+.buttons-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.5rem;
+ 
+}
+
+.each-button {
+  font-family: Cocogoose;
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px #000000;
+
+}
+
+.title {
+  font-family: CocogooseI;
+  color: #FFFEF2;
+  font-size: 60px;
+  text-shadow: 2px 2px 2px #000000;
+  
+}

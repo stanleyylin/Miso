@@ -8,10 +8,21 @@
 }
 @font-face {
   font-family: 'CocogooseI';
-  src: local('CocogooseI'), url(./res/Cocogoose.ttf) format('truetype');
+  src: local('CocogooseI'), url(./res/CocogooseI.ttf) format('truetype');
 }
 
 html,body {
   margin:0;
   padding:0;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
