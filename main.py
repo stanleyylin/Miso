@@ -7,9 +7,9 @@ import cohere
 intents = discord.Intents.all()
 # client = commands.Bot()
 
-client = commands.Bot(command_prefix = '+', intents= intents)
+client = discord.Client(intents= intents)
 
-client.add_cog(Commands(client))
+client = commands.Bot(command_prefix = '+', intents= intents)
 
 # TODO: learn about cogs 
 
@@ -25,7 +25,6 @@ async def on_message(message):
     problemList = misogynyModel.classifyMessage(message.content)
     await message.channel.send(str(problemList[0]) + ", " + str(problemList[1]) + "%")
     await message.channel.send(str(problemList[2]) + ", " + str(problemList[3]) + "%")
-   
 
 @client.command()
 async def hello(ctx):
