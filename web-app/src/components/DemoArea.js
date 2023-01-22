@@ -1,6 +1,6 @@
 import React from 'react'
 import './demoarea.css'
-import WriteMessage from './input-field'
+import WriteMessage from './InputField'
 const DemoArea = () => {
   return (
     <div className='bg'>

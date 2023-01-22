@@ -1,0 +1,63 @@
+.submit {
+  margin-left: 10px;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0.8rem;
+}
+
+.submitter {
+  height: 3rem;
+  width: 46.5rem;
+  border-radius: 0.8rem;
+  padding-left: 1rem;
+  font-family: 'Roboto', sans serif;
+  font-size: 20px;
+
+}
+.outer-box {
+  border-radius: 20px;
+  height: 400px;
+  width: 800px;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 1fc 1fc;
+}
+.bottom-half {
+  margin-top: 20px;
+}
+.user-message {
+  float: right;
+  margin-top: 60px;
+  margin-right: 65px;
+  width: 350px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  background-color: #99DEC3;
+  padding: 15px;
+  border-radius: 10px;
+}
+.bot-message {
+  float: left;
+  margin-left: 65px;
+  font-family: 'Roboto', sans-serif;
+  width: 350px;
+  font-size: 20px;
+  background-color: #6c6c6c;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.profile1 {
+  position: relative;
+  right: 30px;
+  top: 50px;
+  height: 60px;
+  float: right;
+}
+.profile2 {
+  position: relative;
+  left: 30px;
+  top: 20px;
+  height: 60px;
+  float: left;
+}
