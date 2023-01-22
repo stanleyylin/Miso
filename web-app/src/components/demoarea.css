@@ -1,0 +1,9 @@
+.bg {
+  background-image: url(../res/green-bg.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  
+}

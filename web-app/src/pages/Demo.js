@@ -1,11 +1,12 @@
 import React from "react"
 import WriteMessage from "../components/WriteMessage"
+import DemoArea from "../components/DemoArea"
 import './demo.css'
 
 const About = () => {
   return (
-    <div className="message">
-      <WriteMessage/>
+    <div className="demo">
+      <DemoArea/>
     
     </div>
   )
