@@ -3,7 +3,7 @@ import './profiles.css'
 const Profiles = () => {
   return (
     <div className='bg-profile'>
-      
+    
     </div>
   )
 }
