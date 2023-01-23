@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Miso/static/css/main.78bcdf08.css",
+    "main.js": "/Miso/static/js/main.d245576b.js",
+    "static/media/profiles.gif": "/Miso/static/media/profiles.c35756bbdeac9f15447c.gif",
+    "static/media/deco3.gif": "/Miso/static/media/deco3.6ed67fe65e6235acea73.gif",
+    "static/media/deco2.gif": "/Miso/static/media/deco2.39ac81274bf0ba69fee7.gif",
+    "static/media/deco1.gif": "/Miso/static/media/deco1.5a20d4b01c1b21ecde93.gif",
+    "static/media/CocogooseI.ttf": "/Miso/static/media/CocogooseI.0874099f4300bb4d75d6.ttf",
+    "static/media/Cocogoose.ttf": "/Miso/static/media/Cocogoose.6731ef40f4416b5c9069.ttf",
+    "static/media/TuesdayNight-Regular.otf": "/Miso/static/media/TuesdayNight-Regular.1b796833238b7a408885.otf",
+    "static/media/green-bg.jpg": "/Miso/static/media/green-bg.f6e529ce4b88f8f64aa3.jpg",
+    "static/media/demo3.png": "/Miso/static/media/demo3.4bbaf8e832511351963b.png",
+    "static/media/demo1.png": "/Miso/static/media/demo1.180168d392ac1fd4a702.png",
+    "static/media/demo2.png": "/Miso/static/media/demo2.4b1da823e9b7ba276a50.png",
+    "index.html": "/Miso/index.html",
+    "main.78bcdf08.css.map": "/Miso/static/css/main.78bcdf08.css.map",
+    "main.d245576b.js.map": "/Miso/static/js/main.d245576b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78bcdf08.css",
+    "static/js/main.d245576b.js"
+  ]
+}
