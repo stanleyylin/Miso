@@ -4,6 +4,10 @@ Miso is an AI bot that detects ***misogynistic and harmful*** comments made on m
 In professional communication spaces–especially Discord for new startups, Miso ensures that HR is informed of misogynistic and toxic behaviour from employees.
 Ultimately, we hope to ***reduce misogyny within tech communities*** so that women feel more empowered to work in STEM!
 
+This was the winner of the University of Toronto's Hackathon prize for best hack to promote female empowerment in STEM!
+
+https://devpost.com/software/miso
+
 ---
 # Home Page
 
