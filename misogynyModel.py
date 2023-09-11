@@ -1,5 +1,5 @@
 import cohere
-from cohere.classify import Example
+from cohere.responses.classify import Example
 
 co = cohere.Client('iB2NBRMvpjLHLWjaUGrDL2kLsgtkCiq24xKFksSx') #This is your trial API key
 
