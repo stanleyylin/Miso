@@ -38,4 +38,5 @@ When downloaded as a discord bot, Miso logs any violations by employees into Est
 
 ---
 # To try Miso out!...
-Coming soon...
+For now, here is the frontend: https://miso-frontend-only.netlify.app/
+The actual functionality requires this project to be run locally.
